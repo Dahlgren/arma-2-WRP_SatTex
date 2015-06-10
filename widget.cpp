@@ -185,9 +185,9 @@ void Widget::Create_Image(char *RootOfSources, int resolution, char *satellite)
 	qDebug() << "Resolution: " << resolution << " texRes: " << texRes;
 
 	// resultImage is the satellite image, the big one.
-    // Format_RGB16 : 16-bit RGB format (5-6-5).
-    // Format_RGB555 : 16-bit RGB format (5-5-5). The unused most significant bit is always zero.
-    QImage *resultImage = new QImage(resolution, resolution, QImage::Format_RGB555);
+	// Format_RGB16 : 16-bit RGB format (5-6-5).
+	// Format_RGB555 : 16-bit RGB format (5-5-5). The unused most significant bit is always zero.
+	QImage *resultImage = new QImage(resolution, resolution, QImage::Format_RGB555);
 	// error check for memory allocation
 	if (resultImage == NULL)
 	{
